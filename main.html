@@ -4,12 +4,43 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: #f0f0f0;
+		}
+
+		/* style the star */
+		.star {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			clip-path: polygon(
+        50% 0%,   /* Top vertex */
+        61% 35%,  /* Right top vertex */
+        98% 35%,  /* Right bottom vertex */
+        68% 57%,  /* Bottom right vertex */
+        79% 91%,  /* Bottom vertex */
+        50% 70%,  /* Bottom left vertex */
+        21% 91%,  /* Bottom left vertex */
+        32% 57%,  /* Top left vertex */
+        2% 35%,   /* Left bottom vertex */
+        39% 35%   /* Right top vertex */
+    );
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+
+	<div class="star"></div>
 
 </body>
 
